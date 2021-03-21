@@ -55,12 +55,12 @@
         </div>
       </nav>
       <section>
-        The point of this exercise is to design a JavaScript module that
-        displays and hides dropdown menus. This implementation uses JavaScript
-        to change the max-height of the clicked menu for a smooth
-        transition. It limits the number of menus open to one at a time and
-        moves it to the top of the Z-index so that the options aren't covered up
-        by other menu buttons. All clicks 
+        The point of this exercise is to use JavaScript to display and hide
+        dropdown menus. When a menu button is clicked, the max-height of the div
+        containing all its options is toggled between zero and the sum of the
+        offset height of its child elements. With a transition time of .2s and
+        the overflow set to hidden, this makes menu options smoothly wipe
+        from the bottom of its respective button.
       </section>
     </main>
     <script src="script.js"></script>
